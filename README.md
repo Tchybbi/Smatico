@@ -1,50 +1,97 @@
-# Welcome to your Expo app 👋
+# SmatiCo - Service Orders Auction App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile app that allows users to sign up, select a role (customer or service provider), place orders, and track/manage deliveries or services.
 
-## Get started
+## Features
 
-1. Install dependencies
+### User Authentication
+- Registration and login system
+- Role selection (customer or service provider)
 
-   ```bash
+### Customer Features
+- Create and manage service orders
+- View and select service providers
+- Track order status
+- Rate and review service providers
+
+### Service Provider Features
+- View available orders
+- Place bids on orders
+- Track assigned orders
+- Manage profile and ratings
+
+### Core Functionality
+- Order creation and management
+- Bidding system for service providers
+- Real-time order status updates
+- User profiles and ratings
+- Search and filtering of orders
+
+## Technologies Used
+
+- **React Native** - Mobile app framework
+- **Expo** - React Native toolchain
+- **Expo Router** - Navigation and routing
+- **AsyncStorage** - Local data persistence
+- **Context API** - State management
+- **Expo Vector Icons** - Icon library
+
+## Installation and Setup
+
+1. **Prerequisites**
+   - Node.js (v14 or higher)
+   - npm or yarn
+   - Expo CLI (`npm install -g expo-cli`)
+
+2. **Clone the repository**
+   ```
+   git clone <repository-url>
+   cd SmaticoApp
+   ```
+
+3. **Install dependencies**
+   ```
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-   npx expo start
+4. **Start the development server**
+   ```
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+5. **Run on a device or emulator**
+   - Use the Expo Go app on your physical device by scanning the QR code
+   - Press 'a' for Android emulator
+   - Press 'i' for iOS simulator (Mac only)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## App Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+The app follows the Expo Router file-based routing structure:
 
-## Get a fresh project
+- `app/` - Main application code
+  - `(auth)/` - Authentication screens (login, signup)
+  - `(app)/` - Main app screens (after logging in)
+  - `(onboarding)/` - Onboarding screens
+  - `context/` - App context and data management
+  - `components/` - Reusable UI components
+  - `constants/` - App constants and theme
 
-When you're ready, run:
+## Data Persistence
 
-```bash
-npm run reset-project
-```
+The app uses AsyncStorage for local data persistence. In a production environment, this would be replaced with a proper backend server and database.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Contributing
 
-## Learn more
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-To learn more about developing your project with Expo, look at the following resources:
+## License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Join the community
+## Contact
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+For any questions or feedback, please reach out to [contact email].
